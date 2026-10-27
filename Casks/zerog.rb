@@ -9,6 +9,12 @@ cask "zerog" do
 
   app "ZeroG.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ZeroG.app"],
+                   must_succeed: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.reggiesoft.zerog",
     "~/Library/Caches/com.reggiesoft.zerog",
