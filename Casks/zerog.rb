@@ -1,6 +1,6 @@
 cask "zerog" do
   version "1.0.3"
-  sha256 :no_check
+  sha256 "197bb77856112d3ce02a808ee9ae45bc3e099dffeae7cb3b7daeea4e647464da"
 
   url "https://github.com/reggiesoft-labs/zerog/releases/download/v#{version}/ZeroG_#{version}_universal.dmg"
   name "ZeroG"
